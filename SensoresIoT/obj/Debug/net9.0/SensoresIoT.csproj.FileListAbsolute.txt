@@ -1,0 +1,14 @@
+C:\Users\gokuq\Music\prueba tecnica telermeriks\SensoresIoT\bin\Debug\net9.0\SensoresIoT.exe
+C:\Users\gokuq\Music\prueba tecnica telermeriks\SensoresIoT\bin\Debug\net9.0\SensoresIoT.deps.json
+C:\Users\gokuq\Music\prueba tecnica telermeriks\SensoresIoT\bin\Debug\net9.0\SensoresIoT.runtimeconfig.json
+C:\Users\gokuq\Music\prueba tecnica telermeriks\SensoresIoT\bin\Debug\net9.0\SensoresIoT.dll
+C:\Users\gokuq\Music\prueba tecnica telermeriks\SensoresIoT\bin\Debug\net9.0\SensoresIoT.pdb
+C:\Users\gokuq\Music\prueba tecnica telermeriks\SensoresIoT\obj\Debug\net9.0\SensoresIoT.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gokuq\Music\prueba tecnica telermeriks\SensoresIoT\obj\Debug\net9.0\SensoresIoT.AssemblyInfoInputs.cache
+C:\Users\gokuq\Music\prueba tecnica telermeriks\SensoresIoT\obj\Debug\net9.0\SensoresIoT.AssemblyInfo.cs
+C:\Users\gokuq\Music\prueba tecnica telermeriks\SensoresIoT\obj\Debug\net9.0\SensoresIoT.csproj.CoreCompileInputs.cache
+C:\Users\gokuq\Music\prueba tecnica telermeriks\SensoresIoT\obj\Debug\net9.0\SensoresIoT.dll
+C:\Users\gokuq\Music\prueba tecnica telermeriks\SensoresIoT\obj\Debug\net9.0\refint\SensoresIoT.dll
+C:\Users\gokuq\Music\prueba tecnica telermeriks\SensoresIoT\obj\Debug\net9.0\SensoresIoT.pdb
+C:\Users\gokuq\Music\prueba tecnica telermeriks\SensoresIoT\obj\Debug\net9.0\SensoresIoT.genruntimeconfig.cache
+C:\Users\gokuq\Music\prueba tecnica telermeriks\SensoresIoT\obj\Debug\net9.0\ref\SensoresIoT.dll

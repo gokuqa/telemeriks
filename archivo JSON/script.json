@@ -1,0 +1,45 @@
+{
+    "DispositivoID": "sensor_001",
+    "FechaHora": ISODate("2025-01-21T10:00:00Z"),
+    "Valor": 24.5
+  }
+  
+
+
+db.eventos.aggregate([
+    {
+      $group: {
+        _id: "$DispositivoID",
+        promedioValor: { $avg: "$Valor" }
+      }
+    }
+  ])
+  {
+    "modelo": [
+      {
+        "DispositivoID": "sensor_001",  // ID único del dispositivo de sensor
+        "FechaHora": "2025-01-21T10:00:00Z",  // Fecha y hora del evento en formato ISODate
+        "Valor": 24.5  // Valor registrado por el sensor
+      },
+      {
+        "DispositivoID": "sensor_002",  // ID único del dispositivo de sensor
+        "FechaHora": "2025-01-21T10:05:00Z",  // Fecha y hora del evento
+        "Valor": 30.2  // Valor registrado por el sensor
+      },
+      {
+        "DispositivoID": "sensor_001",  // ID único del dispositivo de sensor
+        "FechaHora": "2025-01-21T10:10:00Z",  // Fecha y hora del evento
+        "Valor": 28.4  // Valor registrado por el sensor
+      }
+    ],
+    
+    "consulta_agregacion": [
+      {
+        "$group": {  // Operador de agregación para agrupar los eventos por DispositivoID
+          "_id": "$DispositivoID",  // Agrupar por el campo DispositivoID
+          "promedioValor": { "$avg": "$Valor" }  // Calcular el promedio del campo Valor para cada DispositivoID
+        }
+      }
+    ]
+  }
+  

@@ -1,0 +1,72 @@
++------------------+       +------------------+       +------------------+
+|   Cliente API    | <---> |    API REST      | <---> |  RabbitMQ Broker |
+|  (Frontend)      |       |   (Backend)      |       |   (Mensajes)     |
++------------------+       +------------------+       +------------------+
+                            |                              |
+                            |                              v
+                            |                    +------------------+
+                            |                    |  MongoDB         |
+                            |                    |  (NoSQL)         |
+                            |                    +------------------+
+                            |
+                            v
+                  +------------------+
+                  |  SQL Server      |
+                  |  (Relacional)    |
+                  +------------------+
+
+
+Para el entregable solicitado, el diagrama de arquitectura y la breve descripción de los componentes se organizan de la siguiente manera:
+
+Diagrama de Arquitectura
+sql
+Copiar
+Editar
++------------------+       +------------------+       +------------------+
+|   Cliente API    | <---> |    API REST      | <---> |  RabbitMQ Broker |
+|  (Frontend)      |       |   (Backend)      |       |   (Mensajes)     |
++------------------+       +------------------+       +------------------+
+                            |                              |
+                            |                              v
+                            |                    +------------------+
+                            |                    |  MongoDB         |
+                            |                    |  (NoSQL)         |
+                            |                    +------------------+
+                            |
+                            v
+                  +------------------+
+                  |  SQL Server      |
+                  |  (Relacional)    |
+                  +------------------+
+Descripción de los Componentes
+Cliente API (Frontend):
+
+Interfaz de usuario o cliente que realiza solicitudes HTTP para interactuar con la API REST.
+Las solicitudes son enviadas a la API REST para consultar los datos de los sensores.
+API REST (Backend):
+
+Responsabilidad: Exponer endpoints que permitan a los clientes acceder a los datos de los sensores.
+Tecnología: ASP.NET Core Web API.
+Endpoints: Se exponen métodos como GET para consultar los datos de sensores almacenados en bases de datos.
+Conexión con Bases de Datos:
+Al recibir una solicitud, la API consulta los datos de sensores desde MongoDB o SQL Server, según lo solicitado.
+RabbitMQ Broker:
+
+Responsabilidad: Actuar como un intermediario para el envío de mensajes entre el backend y otros servicios o aplicaciones.
+Tecnología: RabbitMQ.
+Uso: El backend puede enviar mensajes (por ejemplo, datos de sensores) a través de RabbitMQ, para ser procesados o almacenados.
+MongoDB:
+
+Responsabilidad: Almacenar datos de sensores de manera no relacional.
+Tecnología: MongoDB.
+Uso: MongoDB es ideal para almacenar información flexible y escalable de sensores que no requiere un esquema rígido.
+SQL Server:
+
+Responsabilidad: Almacenar datos de sensores de manera estructurada y relacional.
+Tecnología: SQL Server.
+Uso: Utilizado para almacenar datos de sensores en un formato relacional con tablas y relaciones definidas.
+Flujo de Datos
+El Cliente API realiza una solicitud HTTP a la API REST.
+La API REST recibe la solicitud, consulta los datos de sensores en MongoDB o SQL Server, dependiendo de la necesidad.
+Si el backend requiere recibir mensajes de sensores o procesar información en segundo plano, el backend puede enviar estos mensajes a través de RabbitMQ.
+Los datos almacenados en MongoDB o SQL Server son devueltos al Cliente API para su visualización.
