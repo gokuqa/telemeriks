@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\gokuq\\Music\\prueba tecnica telermeriks\\SensoresIoT\\SensoresIoT.csproj": {}
+    "C:\\Users\\gokuq\\Music\\prueba tecnica telermeriks\\1-SensoresIoT\\SensoresIoT.csproj": {}
   },
   "projects": {
-    "C:\\Users\\gokuq\\Music\\prueba tecnica telermeriks\\SensoresIoT\\SensoresIoT.csproj": {
+    "C:\\Users\\gokuq\\Music\\prueba tecnica telermeriks\\1-SensoresIoT\\SensoresIoT.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gokuq\\Music\\prueba tecnica telermeriks\\SensoresIoT\\SensoresIoT.csproj",
+        "projectUniqueName": "C:\\Users\\gokuq\\Music\\prueba tecnica telermeriks\\1-SensoresIoT\\SensoresIoT.csproj",
         "projectName": "SensoresIoT",
-        "projectPath": "C:\\Users\\gokuq\\Music\\prueba tecnica telermeriks\\SensoresIoT\\SensoresIoT.csproj",
+        "projectPath": "C:\\Users\\gokuq\\Music\\prueba tecnica telermeriks\\1-SensoresIoT\\SensoresIoT.csproj",
         "packagesPath": "C:\\Users\\gokuq\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gokuq\\Music\\prueba tecnica telermeriks\\SensoresIoT\\obj\\",
+        "outputPath": "C:\\Users\\gokuq\\Music\\prueba tecnica telermeriks\\1-SensoresIoT\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\gokuq\\AppData\\Roaming\\NuGet\\NuGet.Config"
